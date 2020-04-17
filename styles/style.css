@@ -1155,6 +1155,10 @@ footer p span {
         display: initial;
     }
 
+    .mobile-self {
+        display: none;
+    }
+
     .photo-container {
         width: 100%;
         left: 0;
@@ -1431,6 +1435,10 @@ footer p span {
         font-size: 70px;
     }
 
+    .about-main {
+        margin-top: 4vh;
+    }
+
     .about-main h2 {
         font-size: 21px;
     }
@@ -1440,8 +1448,8 @@ footer p span {
     }
 
     .about-main div {
-        font-size: 13px;
-        margin-top: 5px;
+        font-size: 12.5px;
+        margin-top: 3px;
     }
 
     .skills-main {
