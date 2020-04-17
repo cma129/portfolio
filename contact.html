@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Claudia Ahn</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap" rel="stylesheet"> 
+    <script src='https://kit.fontawesome.com/0ae09e0157.js' crossorigin='anonymous'></script>
+    <!-- favicon -->
+    <link type="image/png" href="styles/assets/favicon.png" rel="icon">
+</head>
+<body class="contact">
+    <canvas id="canvas-basic"></canvas>
+    <div id="particles-js"></div>
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+    <!-- Header starts here -->
+    <header>
+        <div class="top-line wrapper clearfix">
+            <a href="https://claudiaahn.com" class="logo"><img src="styles/assets/logo.png" alt="Home"></a>
+            <button class="hamburger"><i class="fas fa-bars" aria-hidden></i><p class="sr-only">Menu</p></button>
+            <nav class="menu">
+                <div class="half-screen">
+                    <button class="exit-responsive">
+                        <i class="fas fa-times" aria-hidden></i>
+                        <p class="sr-only">Close</p>
+                    </button>
+                    <ul class="right-menu clearfix">
+                        <li class="mobile-home"><a href="https://claudiaahn.com">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>  
+    <!-- Header ends here -->
+    <!-- Main starts here -->
+    <main class="contact-main wrapper" id="maincontent">
+        <h2>Feel free to reach out! Let's discuss interesting opportunities and ideas.</h2>
+        <section class="main-icon-container">
+            <div class="hello">
+                <h1>Say hello</h1>
+                <ul class="contact-icons">
+                    <li><a href="mailto:claudiamhahn@gmail.com" target="_blank" aria-label="Email Claudia"><i aria-hidden class="fas fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="calendar">
+                <h1>Meet virtually</h1>
+                <ul class="contact-icons">
+                    <li><a href="https://calendly.com/claudiamhahn" target="_blank" aria-label="Claudia's calendar"><i aria-hidden
+                                class="far fa-calendar-alt"></i></a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <h1>Connect with me</h1>
+                <ul class="contact-icons">
+                    <li><a href="https://www.linkedin.com/in/claudiamhahn" target="_blank" aria-label="Go to Claudia's LinkedIn page"><i aria-hidden class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/cma129" target="_blank" aria-label="Go to Claudia's Github page"><i aria-hidden class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.twitter.com/ahn_claudia" target="_blank" aria-label="Go to Claudia's Twitter page"><i aria-hidden class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.medium.com/@claudiamhahn" target="_blank" aria-label="Go to Claudia's blog"><i aria-hidden class="fab fa-medium-m"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <form action="https://formspree.io/mlelljqg" method="POST" class="contact-form">
+            <div class="name-email">
+                <input type="text" name="name" id="name" placeholder="Your name" required="required" /><br>
+                <label for="name" class="sr-only">Your name</label>
+                <input type="email" id="email" placeholder="Your email" required="required" name="email" /><br>
+                <label for="email" class="sr-only">Your email</label>
+            </div>
+            <textarea name="message" id="message" placeholder="Hey Claudia, let's make something together!" cols="20" rows="5" required="required"></textarea><br />
+            <label for="message" class="sr-only">Your message</label>
+            <button type="submit">Send</a></button>
+        </form>
+    </main>
+    <!-- Main ends here -->
+    <!-- Footer starts here -->
+    <footer class="contact-footer wrapper">
+        <p>© Claudia Ahn 2020 <span>(Cursor imgs from flaticon.com)</span></p>
+    </footer>
+    <!-- Footer ends here -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.js"></script>
+    <script src="./app.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+</body>
+</html>
