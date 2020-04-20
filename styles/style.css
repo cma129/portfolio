@@ -357,8 +357,8 @@ h1 span {
     text-align: center;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
+    justify-content: center;
     opacity: 0;
     font-weight: bold;
     transition: opacity 0.5s linear;
@@ -819,6 +819,9 @@ footer p span {
         width: 48%;
     }
 
+    .description {
+        padding: 0;
+    }
 }
 
 /* Small desktop */
@@ -954,6 +957,7 @@ footer p span {
 
     .description {
         font-size: 1.4rem;
+        padding: 11%;
     }
 
     .contact-main h2 {
@@ -1329,7 +1333,6 @@ footer p span {
         position: initial;
         opacity: 1;
         font-size: 1.4rem;
-        padding: 8% 0;
         height: 250px;
     }
 
@@ -1550,7 +1553,6 @@ footer p span {
         position: initial;
         opacity: 1;
         font-size: 1.4rem;
-        padding: 8% 0;
         height: 250px;
     }
 
