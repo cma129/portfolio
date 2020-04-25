@@ -636,13 +636,23 @@ textarea {
 
 .resume-main h3 {
     text-transform: uppercase;
-    margin-top: 12px;
     line-height: 2em;
     font-size: 1.3em;
 }
 
+.education,
+.soft,
+.experience {
+    margin-top: 12px;
+}
+
+.profile {
+    line-height: 1.8em;
+}
+
 .education {
     margin-bottom: 30px;
+    line-height: 1.7em;
 }
 
 .bold {
@@ -654,7 +664,11 @@ textarea {
     font-style: italic;
 }
 
-.degree,
+.degree {
+    padding-top: 15px;
+}
+
+.first-degree,
 .position {
     padding-top: 10px;
 }
