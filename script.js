@@ -4,9 +4,9 @@ document.addEventListener("click", x=>0)
 // Nav bar styling change on scroll
 $(window).on("scroll", function() {
     if($(window).scrollTop() > 10) {
-        $(".projects-header, .resume-header").addClass("active");
+        $(".projects-header, .blog-header, .resume-header").addClass("active");
     } else {
-        $(".projects-header, .resume-header").removeClass("active");
+        $(".projects-header, .blog-header, .resume-header").removeClass("active");
     }
 });
 

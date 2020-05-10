@@ -41,13 +41,15 @@ input,
 textarea,
 button,
 .github,
-.pdf {
+.pdf,
+.read-more {
     border-radius: 7px;
 }
 
 button,
 .github,
-.pdf {
+.pdf,
+.read-more {
     width: 20%;
     padding: 15px;
     color: #f6f7f9;
@@ -63,7 +65,9 @@ button:focus-within,
 .github:hover,
 .github:focus-within,
 .pdf:hover,
-.pdf:focus-within {
+.pdf:focus-within,
+.read-more:hover,
+.read-more:focus-within {
     color: #554351;
     background-color: #f6f7f9;
 }
@@ -81,7 +85,8 @@ button:focus-within,
     animation-fill-mode: forwards;
 }
 
-.projects {
+.projects,
+.blog {
     min-height: 100vh;
 }
 
@@ -296,6 +301,7 @@ h1 span {
 
 /* Projects main styles */
 .projects-header,
+.blog-header,
 .resume-header {
     position: fixed;
     top: 0;
@@ -485,6 +491,35 @@ h1 span {
     color: #f6f7f9;
 }
 
+/* Blog main styles */
+.blog-main {
+    margin-top: 10%;
+    max-width: 600px;
+}
+
+.blog img {
+    border-radius: 15px;
+}
+
+.post {
+    margin-bottom: 5%;
+}
+
+.post h2 {
+    font-size: 27px;
+    line-height: 1.4em;
+    margin: 2.5% auto 1.5%;
+}
+
+.post p {
+    line-height: 1.4em;
+}
+
+.read-more {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 /* Contact main styles */
 .contact-main {
     animation: fade-in-1 ease 2s; 
@@ -610,7 +645,7 @@ textarea {
     color: #554351;
 }
 
-/* Resume styles */
+/* Resume main styles */
 .resume {
     height: auto;
     min-height: 100vh;
@@ -717,7 +752,6 @@ textarea {
 }
 
 /* Footer styles */
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -847,12 +881,122 @@ footer p span {
     }
 }
 
-/* Small desktop */
-@media(max-width: 990px) {
-    .menu li {
-        margin-left: 40px;
+@media(max-width: 1040px) {
+    header {
+        background-color: rgba(255, 255, 255, 0);
     }
 
+    .logo {
+        top: 15px;
+        width: 40px;
+    }
+
+    .hamburger,
+	.exit-responsive {
+		display: block;
+        font-size: 30px;
+        position: absolute;
+        top: 13px;
+        background-color: initial;
+        width: auto;
+        transition: color 0.1s linear;
+    }
+
+    .hamburger {
+        padding: 10px 6px;
+        right: -6px;
+    }
+
+    .exit-responsive {
+        top: 6px;
+        left: 6px;
+    }
+
+    .hamburger:hover,
+    .hamburger:focus-within,
+    .hamburger i:hover,
+    .hamburger i:focus-within,
+    .exit-responsive:hover,
+    .exit-responsive:focus-within,
+    .exit-responsive i:hover,
+    .exit-responsive i:focus-within {
+        color: #554351;
+        background: rgba(0, 0, 0, 0);
+        font-size: 30px;
+    }
+
+	.menu {
+		display: none;
+	}
+
+	.menu .half-screen {
+		position: fixed;
+		top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        background: #e6ca75;
+		color: #554351;
+        z-index: 10;
+	}
+
+    .half-screen ul {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 8vh;
+    }
+
+    .half-screen li {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .menu li {
+        font-size: 15px;
+    }
+
+    .menu li:last-of-type {
+        text-align: center;
+    }
+
+    .menu ul a {
+        font-size: 27px;
+    }
+
+    .mobile-home {
+        display: initial;
+    }
+
+    .mobile-self {
+        display: none;
+    }
+
+    .active {
+        background-color: #e7cb70c9;
+    }
+
+    .blog-main,
+    .projects-main {
+        margin-top: 15%;
+    }
+
+    .projects-header {
+        padding-bottom: 19px;
+    }
+
+    .blog-header,
+    .resume-header {
+        padding-bottom: 19px;
+    }
+}
+
+/* Small desktop */
+@media(max-width: 990px) {
     .wrapper {
         width: 90%;
     }
@@ -939,10 +1083,6 @@ footer p span {
 
 /* Tablet */
 @media(max-width: 830px) {
-    .menu li {
-        margin-left: 20px;
-    }
-
     .skills-main {
         margin-bottom: 5%;
     }
@@ -998,12 +1138,6 @@ footer p span {
 }
 
 @media(max-width: 740px) {
-    .menu li {
-        font-size: 15px;
-        width: 90px;
-        margin-left: 5px;
-    }
-
     h1,
     h2 {
         font-size: 35px;
@@ -1096,96 +1230,6 @@ footer p span {
 }
 
 @media(max-width: 600px) {
-    header {
-        background-color: rgba(255, 255, 255, 0);
-    }
-
-    .logo {
-        top: 15px;
-        width: 40px;
-    }
-
-    .hamburger,
-	.exit-responsive {
-		display: block;
-        font-size: 30px;
-        position: absolute;
-        top: 13px;
-        background-color: initial;
-        width: auto;
-        transition: color 0.1s linear;
-    }
-
-    .hamburger {
-        padding: 10px 6px;
-        right: -6px;
-    }
-
-    .exit-responsive {
-        top: 6px;
-        left: 6px;
-    }
-
-    .hamburger:hover,
-    .hamburger:focus-within,
-    .hamburger i:hover,
-    .hamburger i:focus-within,
-    .exit-responsive:hover,
-    .exit-responsive:focus-within,
-    .exit-responsive i:hover,
-    .exit-responsive i:focus-within {
-        color: #554351;
-        background: rgba(0, 0, 0, 0);
-        font-size: 30px;
-    }
-
-	.menu {
-		display: none;
-	}
-
-	.menu .half-screen {
-		position: fixed;
-		top: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100vh;
-        background: #e6ca75;
-		color: #554351;
-        z-index: 10;
-	}
-
-    .half-screen ul {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        padding-top: 8vh;
-    }
-
-    .half-screen li {
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .menu li:last-of-type {
-        text-align: center;
-    }
-
-    .menu ul a {
-        font-size: 27px;
-    }
-
-    .mobile-home {
-        display: initial;
-    }
-
-    .mobile-self {
-        display: none;
-    }
-
     .photo-container {
         width: 100%;
         left: 0;
@@ -1221,25 +1265,25 @@ footer p span {
         margin-bottom: 4%;
     }
 
-    .projects-header,
-    .resume-header {
-        padding-bottom: 19px;
-    }
-
-    .active {
-        background-color: #e7cb70c9;
-    }
-    
-    .projects-main {
-        margin-top: 15%;
-    }
-
     .project {
         width: 100%;
     }
 
     .description {
         font-size: 1.26rem;
+    }
+
+    .blog-main {
+        margin-top: 20%;
+    }
+
+    .post {
+        margin-bottom: 5%;
+    }
+
+    .post h2 {
+        margin: 3% auto 1.6%;
+        line-height: 1.25em;
     }
 
     .main-icon-container {
@@ -1381,6 +1425,18 @@ footer p span {
         line-height: 2.3em;
     }
 
+    .blog-main {
+        margin-top: 25%;
+    }
+
+    .post {
+        margin-bottom: 7%;
+    }
+
+    .post h2 {
+        margin: 5% auto 2.5%;
+    }
+
     .contact-main {
         margin: 13% auto 40%;
     }
@@ -1499,6 +1555,10 @@ footer p span {
         font-size: 1.27rem;
     }
 
+    .blog-main {
+        margin-top: 30%;
+    }
+
     .main-icon-container h1 {
         font-size: 18px;
     }
@@ -1538,10 +1598,6 @@ footer p span {
     #canvas-basic,
     #particles-js {
         display: none;
-    }
-
-    .menu li {
-        margin-left: 20px;
     }
 
     h1,
