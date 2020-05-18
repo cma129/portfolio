@@ -1401,7 +1401,7 @@ footer p span {
 
     .project {
         margin: 0 auto;
-        min-height: 100vh;
+        min-height: 83vh;
     }
 
     .project:first-of-type {
