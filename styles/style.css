@@ -85,7 +85,6 @@ button:focus-within,
     animation-fill-mode: forwards;
 }
 
-.projects,
 .blog {
     min-height: 100vh;
 }
@@ -123,7 +122,8 @@ button {
     100% { 
         opacity: 1; 
     } 
-} 
+}
+
 /* Particles JS background styles */
 #particles-js canvas {
     display: block;
@@ -427,12 +427,12 @@ h1 span {
     animation: fade-in-1 ease 2s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;
-    margin-bottom: 7%;
+    margin-bottom: 2%;
 }
 
 .skills-main h1 {
-    font-size: 2.2em;
-    line-height: 3em;
+    font-size: 2.8em;
+    margin: 5% auto 6%;
 }
 
 .skills-main ul {
@@ -815,6 +815,10 @@ footer p span {
     .about-main div {
         width: 57%;
     }
+
+    .blog-main {
+        margin-top: 13%;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -980,11 +984,6 @@ footer p span {
         background-color: #e7cb70c9;
     }
 
-    .blog-main,
-    .projects-main {
-        margin-top: 15%;
-    }
-
     .projects-header {
         padding-bottom: 19px;
     }
@@ -1038,11 +1037,6 @@ footer p span {
 
     .about-main div {
         width: 100%;
-    }
-
-    .skills-main h1 {
-        margin-top: 0;
-        margin-bottom: 0;
     }
 
     .skills-main li {
@@ -1115,12 +1109,20 @@ footer p span {
 
     .project {
         width: 80%;
-        margin: 20% auto 0;
+        margin: 7% auto 0;
+    }
+
+    .project:first-of-type {
+        margin-top: 17%;
     }
 
     .description {
         font-size: 1.4rem;
         padding: 11%;
+    }
+
+    .blog-main {
+        margin-top: 18%;
     }
 
     .contact-main h2 {
@@ -1134,6 +1136,13 @@ footer p span {
     .contact-icons li {
         margin: 0 12px 0;
         font-size: 30px;
+    }
+}
+
+@media (min-height: 700px) and (max-width: 830px){
+    .blog {
+        min-height: 0;
+        margin-bottom: 20%;
     }
 }
 
@@ -1254,7 +1263,7 @@ footer p span {
     }
 
     .skills-main h1 {
-        font-size: 1.8em;
+        font-size: 2.5em;
     }
 
     .skills-main li {
@@ -1267,6 +1276,11 @@ footer p span {
 
     .project {
         width: 100%;
+        margin-top: 10%;
+    }
+
+    .project:first-of-type {
+        margin-top: 20%;
     }
 
     .description {
@@ -1386,7 +1400,12 @@ footer p span {
     }
 
     .project {
-        margin: 25% auto 0;
+        margin: 0 auto;
+        min-height: 100vh;
+    }
+
+    .project:first-of-type {
+        margin-top: 30%;
     }
 
     .project:hover .mockup,
@@ -1421,7 +1440,7 @@ footer p span {
     }
 
     .skills-main h1 {
-        font-size: 1.7em;
+        font-size: 2.3em;
         line-height: 2.3em;
     }
 
@@ -1534,12 +1553,16 @@ footer p span {
         margin-top: 3px;
     }
 
+    .project:first-of-type {
+        margin-top: 35%;
+    }
+
     .skills-main {
         font-size: 0.8rem;
     }
 
     .skills-main h1 {
-        font-size: 1.6em;
+        font-size: 2em;
     }
 
     .skills-main li {
@@ -1557,6 +1580,14 @@ footer p span {
 
     .blog-main {
         margin-top: 30%;
+    }
+
+    .post h2 {
+        font-size: 23px;
+    }
+
+    .post p {
+        font-size: 0.95em;
     }
 
     .main-icon-container h1 {
@@ -1590,6 +1621,10 @@ footer p span {
     textarea {
         margin: 3px 0 6px;
         padding: 8px;
+    }
+
+    .projects-footer {
+        margin-top: 0;
     }
 }
 
@@ -1633,6 +1668,15 @@ footer p span {
         opacity: 1;
         font-size: 1.4rem;
         height: 250px;
+    }
+
+    .blog img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .blog {
+        margin-bottom: 18%;
     }
 
     .contact-form button {
