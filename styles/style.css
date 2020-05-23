@@ -685,7 +685,6 @@ textarea {
 }
 
 .education,
-.soft,
 .experience {
     margin-top: 12px;
 }
@@ -729,11 +728,9 @@ textarea {
     padding-left: 1em;
 }
 
-.resume-main a:hover,
-.resume-main a:focus-within {
+.resume-main a {
     text-decoration: underline;
-    font-weight: bold;
-}
+    }
 
 .last {
     display: flex;
@@ -1208,6 +1205,10 @@ footer p span {
         width: 100%;
         border: none;
         padding: 0;
+    }
+
+    .right-column {
+        margin-top: 12px;
     }
 
     .education {
