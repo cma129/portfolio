@@ -1636,6 +1636,15 @@ footer p span {
         display: none;
     }
 
+    .menu li {
+        height: 5px;
+    }
+    .menu ul a {
+        font-size: 20px;
+    }
+
+
+
     h1,
     h2 {
         font-size: 25px;
