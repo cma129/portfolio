@@ -676,6 +676,7 @@ textarea {
 .right-column {
     width: 64%;
     padding-left: 20px;
+    line-height: 1.8em;
 }
 
 .resume-main h3 {
@@ -713,7 +714,7 @@ textarea {
 
 .first-degree,
 .position {
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .school {
@@ -988,6 +989,10 @@ footer p span {
     .blog-header,
     .resume-header {
         padding-bottom: 19px;
+    }
+
+    .right-column {
+        line-height: inherit;
     }
 }
 
