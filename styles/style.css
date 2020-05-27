@@ -85,10 +85,6 @@ button:focus-within,
     animation-fill-mode: forwards;
 }
 
-.blog {
-    min-height: 100vh;
-}
-
 @keyframes fade-in-photo { 
     0% { 
         opacity: 0; 
@@ -794,11 +790,23 @@ footer p span {
 }
 
 .contact-footer {
-    justify-content: right;
+    justify-content: flex-end;
     margin-top: -5%;
 }
 
 /* Media queries */
+
+@media(max-height: 800px) {
+    .blog {
+        min-height: 100vh;
+    }
+}
+
+@media(min-height: 801px) {
+    .blog {
+        margin-bottom: 100px;
+    }
+}
 
 /* Small desktop */
 @media(max-width: 1240px) {
@@ -1647,8 +1655,6 @@ footer p span {
     .menu ul a {
         font-size: 20px;
     }
-
-
 
     h1,
     h2 {
