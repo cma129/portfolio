@@ -1015,7 +1015,7 @@ footer p span {
             opacity: 0; 
         } 
         100% { 
-            opacity: 0.4; 
+            opacity: 0.5; 
         } 
     }
     
@@ -1034,15 +1034,6 @@ footer p span {
 
     .main-icon-container h1 {
         font-size: 22px;
-    }
-
-    @keyframes fade-in-photo { 
-        0% { 
-            opacity: 0; 
-        } 
-        100% { 
-            opacity: 0.2; 
-        } 
     }
 
     .about-main div {
@@ -1264,7 +1255,7 @@ footer p span {
             opacity: 0; 
         } 
         100% { 
-            opacity: 0.15; 
+            opacity: 0.1; 
         } 
     }
 
@@ -1406,7 +1397,6 @@ footer p span {
     .about-main div {
         margin-top: 20px;
         font-size: 14px;
-        font-weight: bold;
     }
 
     .about-footer,
