@@ -1406,6 +1406,7 @@ footer p span {
     .about-main div {
         margin-top: 20px;
         font-size: 14px;
+        font-weight: bold;
     }
 
     .about-footer,
