@@ -39,7 +39,7 @@ const granimInstance = new Granim({
 
 // Title type animation
 new TypeIt(".type", {
-    strings: `<h1>Hi, I'm <span>Claudia.</span></h1><h2>I'm a UX developer.</h2>`,
+    strings: `<h1>Hi, I'm <span>Claudia.</span></h1><h2>I'm a web developer.</h2>`,
     speed: 70,
     waitUntilVisible: true
 }).go();
