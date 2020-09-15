@@ -1595,8 +1595,12 @@ footer p span {
         font-size: 0.95em;
     }
 
+    .contact-main {
+      width: 85%;
+    }
+
     .main-icon-container h1 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .contact-icons li {
@@ -1615,17 +1619,19 @@ footer p span {
 
     input[type=text] {
         margin-right: 1.5px;
-        padding: 8px 3px 8px 8px;
+        padding: 8px 3px 8px 12px;
     }
     
     input[type=email] {
         margin-left: 1.5px;
-        padding: 8px 3px 8px 8px;
+        padding: 8px 3px 8px 12px;
     }
 
     textarea {
         margin: 3px 0 6px;
-        padding: 8px;
+        line-height: 1.5em;
+        padding: 8px 3px 8px 12px;
+        height: 100px;
     }
 
     .projects-footer {
