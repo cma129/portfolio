@@ -4,14 +4,15 @@ This is my personal portfolio website!
 
 I designed and coded this whole site, so I believe it can show my personality and style really well.
 
-I'm currently actively looking for a front-end web developer position:
-- remote
-- full/part-time
-- relocating to Edmonton, AB from Toronto as soon as the pandemic ends
+I'm currently looking for a web developer position:
+- GTA/Ottawa
+- remote in North America
+- full-time
 
 ## Built with:
-- Vanilla JavaScript
-- jQuery
+- Vue
+- React
+- JavaScript
 - CSS3
 - HTML5
 
