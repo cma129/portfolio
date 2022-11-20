@@ -1,0 +1,95 @@
+.miniWrapper {
+    width: 55%;
+    margin: 0 auto;
+}
+
+form {
+    padding-top: 50px;
+    line-height: 70px;
+}
+
+.qContainer {
+    background: $secondaryColor;
+    border: none;
+    border-radius: 15px;
+    height: 100vh;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3 {
+    padding-top: 30px;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+input[type=radio] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+input[type=radio]:checked + label {
+    background-color: $selectedColor;
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.choice {
+    width: 23%;
+    margin: 3% auto;
+    border-radius: 15px;
+    transition: background-color 0.5s linear;
+}
+
+.choice:hover,
+.choice:focus-within {
+    background-color: $selectedColor;
+}
+
+.error {
+    background: $primaryColor;
+    color: $backgroundColor;
+    width: 45%;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    left: 70%;
+    bottom: 30px;
+    line-height: 30px;
+    padding: 20px;
+    display: none;
+    font-size: 20px;
+}
+
+button {
+    text-transform: uppercase;
+    background-color: $secondaryColor;
+    border-radius: 15px;
+    padding: 30px 50px;
+    margin: 30px 0 230px;
+    transition: all 0.5s linear;
+    font-size: 35px;
+}
+
+button:hover,
+button:focus-within {
+    background-color: $primaryColor;
+    color: $secondaryColor;
+}
+
+h2,
+.results {
+    display: none;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin: 100px auto 20px;
+}

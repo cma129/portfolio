@@ -1,0 +1,151 @@
+main {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+input {
+    background-color: $accentColor;
+    color: $lightColor;
+    opacity: 1;
+    font-family: 'Sen', sans-serif;
+    height: 60px;
+    padding: 0 20px;
+    border-radius: 10px 10px 0 0;
+    filter: drop-shadow(2px 2px 3px #4d433d);
+    margin-right: 30px;
+    transition: all 0.1s linear;
+}
+
+input,
+.autocompleteItems {
+    width: 350px;
+}
+
+.autocompleteItems {
+    position: absolute;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99999;
+    top: 100%;
+    left: 0;
+    right: 0;
+    filter: drop-shadow(2px 2px 3px #4d433d);
+    text-align: left;
+}
+
+.autocompleteItems div {
+    padding: 5px 20px;
+    cursor: pointer;
+    background-color: $accentColor;
+    color: $backgroundColor;
+    z-index: 999999;
+}
+
+.autocompleteItems div:first-of-type {
+    padding-top: 7px;
+}
+
+.autocompleteItems div:last-of-type {
+    padding-bottom: 10px;
+}
+
+.autocompleteItems div:hover,
+.autocompleteItems div:focus-within {
+    background-color: $lightColor;
+    color: $accentColor;
+}
+
+.autocompleteActive {
+    background-color: $lightColor !important;
+    color: $accentColor !important;
+}
+
+.goContainer {
+    position: relative;
+    height: 60px;
+    width: 60px;
+}
+
+.paw {
+    color: $accentColor;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 60px;
+    filter: drop-shadow(2px 2px 4px #4d433d);
+    transition: all 0.1s linear;
+}
+
+input:hover,
+input:focus-within,
+input:active,
+.goContainer:hover .paw,
+.goContainer:focus-within .paw,
+.goContainer:active .paw {
+    filter: drop-shadow(2px 2px 2px #4d433dab);
+}
+
+.go {
+    color: #a99e94;
+    position: absolute;
+    top: 32px;
+    left: 16.5px;
+    text-transform: uppercase;
+}
+
+.sojooContainer {
+    height: 70%;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.sojoo,
+.sojooOnHover {
+    height: 560px;
+    width: 450px;
+    position: absolute;
+    top: -13%;
+    transition: opacity 0.2s linear;
+}
+
+.sojooOnHover {
+    opacity: 0;
+}
+
+.sojooContainer:hover .sojoo,
+.sojooContainer:focus-within .sojoo {
+    opacity: 0;
+}
+
+.sojooContainer:hover .sojooOnHover,
+.sojooContainer:focus-within .sojoo {
+    opacity: 1;
+}
+
+.errorMsg {
+    width: 100%;
+    height: 110%;
+    padding: 13% 40%;
+    z-index: 9999;
+    font-weight: bold;
+    position: absolute;
+    background-color: #bdb1a396;
+    border-radius: 10px;
+    top: -8%;
+
+}

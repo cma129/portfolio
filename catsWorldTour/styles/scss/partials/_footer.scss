@@ -1,0 +1,22 @@
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: $secondaryColor;
+    font-size: 15px;
+    p {
+        text-align: right;
+        background-color: #bdb1a3e1;
+        padding: 10px 15px;
+        border-radius: 7px;
+        position: relative;
+        left: 15px;
+    }
+    a:hover,
+    a:focus-within {
+        text-decoration: underline;
+    }
+    div {
+        color: #bdb1a300;
+    }
+}
