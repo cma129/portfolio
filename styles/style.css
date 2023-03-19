@@ -206,10 +206,6 @@ header {
     display: block;
 }
 
-.mobile-home {
-    display: none;
-}
-
 /* Home main styles */
 
 .home-main {
@@ -978,11 +974,7 @@ footer p span {
     .menu ul a {
         font-size: 27px;
     }
-
-    .mobile-home {
-        display: initial;
-    }
-
+    
     .active {
         background-color: #e7cb70c9;
     }
