@@ -983,10 +983,6 @@ footer p span {
         display: initial;
     }
 
-    .mobile-self {
-        display: none;
-    }
-
     .active {
         background-color: #e7cb70c9;
     }
